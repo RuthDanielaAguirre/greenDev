@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap');
+
 :root {
     --primary-color: #349b48;
-    --primary-color-hover: #236430d3;
+    --primary-color-hover: #41db60d3;
+    --primary-color-title: #236430d3;
     --secondary-color: #eef6e8;
     --text-color: #363636;
-    --background-color: #f4f9f6;
+    --background-color:#eaeaea;
     --accent-color: #eaeaea;
     --hero-text-shadow: rgba(0, 0, 0, 0.5);
     --blockquote-border: #276734;
+
+    --body-font:"Arimo", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
@@ -17,28 +24,41 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--body-font);
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color-hover);
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color-title);
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--primary-color-title);
+}
+
+.encabezado{
+display: flex;
+background: rgb(9,36,0);
+background: linear-gradient(90deg, rgba(9,36,0,1) 0%, rgba(26,121,9,1) 35%, rgba(51,199,0,1) 100%);
+padding: .5rem 1.25rem;
+font-family: var(--body-font);
+justify-content: space-around;
+color:var(--accent-color)
 }
 
 a {
     text-decoration: none;
-    color: var(--primary-color-hover);
+    color: var(--primary-color-title);
 }
 
 ul {
     list-style-type: none;
 }
 
-nav {
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-}
 
 nav ul {
     display: flex;
@@ -46,7 +66,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(244, 251, 244);
     padding: 10px 20px;
     text-transform: uppercase;
     font-weight: bold;
@@ -59,10 +79,11 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    background: rgb(9,36,0);
+    background: linear-gradient(90deg, rgba(9,36,0,1) 0%, rgba(26,121,9,1) 35%, rgba(51,199,0,1) 100%);
+    color: rgb(244, 251, 244);
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 footer p {
@@ -199,11 +220,6 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.service-item h3 {
-    color: var(--primary-color-hover);
-    margin-bottom: 10px;
-}
-
 .sustainability-section p, .research-section p {
     margin-bottom: 20px;
 }
@@ -223,19 +239,26 @@ form label {
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: .5rem;
+    margin-bottom: 1.25rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 form button {
     background-color: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
     border: none;
+    color: white;
+    width: 5rem;
+    height: 2rem;
+    padding: 5px;
     cursor: pointer;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.3s;
+    border-radius: 12px;
+    margin-top: 5px;
 }
 
 form button:hover {
