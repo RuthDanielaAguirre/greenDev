@@ -42,6 +42,7 @@ h2, h3, h4, h5, h6 {
 
 .encabezado{
 display: flex;
+height: 5vh;
 background: rgb(9,36,0);
 background: linear-gradient(90deg, rgba(9,36,0,1) 0%, rgba(26,121,9,1) 35%, rgba(51,199,0,1) 100%);
 padding: .5rem 1.25rem;
@@ -79,6 +80,7 @@ nav ul li a:hover {
 }
 
 footer {
+    display: flex;
     background: rgb(9,36,0);
     background: linear-gradient(90deg, rgba(9,36,0,1) 0%, rgba(26,121,9,1) 35%, rgba(51,199,0,1) 100%);
     color: rgb(244, 251, 244);

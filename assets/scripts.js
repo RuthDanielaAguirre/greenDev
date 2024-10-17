@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (footerContainer) {
         footerContainer.innerHTML = `
             <footer>
+            <img src="logo-image.jpg" alt="Logo de GreenDev">
                 <p>&copy; 2024 GreenDev - Tecnología para un futuro sostenible</p>
                 <p>Dirección: Calle Verde 123, Ciudad Eco, España | Teléfono: +34 123 456 789</p>
                 <p><a href="mailto:info@greendev.com">info@greendev.com</a> | Política de Neutralidad de CO2</p>
