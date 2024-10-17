@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #349b48;
+    --primary-color-hover: #236430d3;
+    --secondary-color: #eef6e8;
+    --text-color: #363636;
+    --background-color: #f4f9f6;
+    --accent-color: #eaeaea;
+    --hero-text-shadow: rgba(0, 0, 0, 0.5);
+    --blockquote-border: #276734;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color-hover);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color-hover);
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color-hover);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px var(--hero-text-shadow);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px var(--hero-text-shadow);
+}
+
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.ods-item {
+    min-width: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ods-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev-btn, .next-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: var(--primary-color-hover);
+}
+
+blockquote {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid var(--blockquote-border);
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+.services-section, .sustainability-section, .research-section {
+    background-color: var(--accent-color);
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    color: var(--primary-color-hover);
+    margin-bottom: 10px;
+}
+
+.sustainability-section p, .research-section p {
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--primary-color-hover);
+}
