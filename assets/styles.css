@@ -120,8 +120,9 @@ p {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 1200px;
+    max-width: 60rem;
     margin: 0 auto;
+    height: 40rem;
 }
 
 .carousel-slide {
@@ -144,8 +145,8 @@ p {
 
 .carousel-nav {
     position: absolute;
-    top: 50%;
-    width: 100%;
+    top: 25%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -155,10 +156,16 @@ p {
     background-color: var(--primary-color);
     border: none;
     color: white;
-    padding: 10px;
+    width: 5rem;
+    height: 2rem;
+    padding: 5px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.3s;
+    border-radius: 12px;
+    margin-top: 5px;
 }
 
 .prev-btn:hover, .next-btn:hover {
