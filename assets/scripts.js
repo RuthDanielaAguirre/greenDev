@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerContainer = document.getElementById('footer-container');
     if (footerContainer) {
         footerContainer.innerHTML = `
-            <footer>
+            <footer class="footer-container">
           <div class="logo">
               <a href="index.html">
                 <img src="./assets/icons/solar--leaf-bold-duotone.png" alt="logo-image">
