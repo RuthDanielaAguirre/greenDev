@@ -4,9 +4,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbarContainer = document.getElementById('navbar-container');
     if (navbarContainer) {
         navbarContainer.innerHTML = `
+        <header>
+           <div class="logo">
+              <a href="index.html">
+                <img src="./assets/icons/solar--leaf-bold-duotone.png" alt="logo-image">
+                <h1>GREENDEV</h1>
+            </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
             <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="investigacion.html">I+D</a></li>
@@ -14,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     
                 </ul>
             </nav>
+            </header>
         `;
     }
 
@@ -22,7 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (footerContainer) {
         footerContainer.innerHTML = `
             <footer>
-            <img src="logo-image.jpg" alt="Logo de GreenDev">
+          <div class="logo">
+              <a href="index.html">
+                <img src="./assets/icons/solar--leaf-bold-duotone.png" alt="logo-image">
+                <h1>GREENDEV</h1>
+            </a>
+            </div>
                 <p>&copy; 2024 GreenDev - Tecnología para un futuro sostenible</p>
                 <p>Dirección: Calle Verde 123, Ciudad Eco, España | Teléfono: +34 123 456 789</p>
                 <p><a href="mailto:info@greendev.com">info@greendev.com</a> | Política de Neutralidad de CO2</p>

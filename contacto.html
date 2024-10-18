@@ -9,24 +9,13 @@
 </head>
 <body>
 
-    <header>
-        <section class="encabezado">
-        <img src="logo-image.jpg" alt="Logo de GreenDev">
-        <div id="navbar-container"></div>
-    </section>
-    </header>
+    <section id="navbar-container"></section>
 
-    <section class="hero">
-        <img src="hero-contacto.jpg" alt="Contacto - GreenDev">
+    <main class="hero-contacto">
+        <img src="./assets/imgs/msedge_puWpl0rltv.png" alt="Contacto - GreenDev">
         <div class="hero-text">
             <h1>Contacto</h1>
             <p>Estamos aquí para ayudarte a ser más sostenible.</p>
-        </div>
-    </section>
-
-    <main id="contacto">
-        <section>
-            <h2>Formulario de Contacto</h2>
             <form action="enviar.php" method="POST">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
@@ -34,12 +23,12 @@
                 <input type="email" id="email" name="email" required>
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Enviar</button>
+                <button >Enviar</button>
             </form>
-        </section>
+        </div>
     </main>
 
-    <div id="footer-container"></div>
+    <section id="footer-container"></section>
 
     <script src="./assets/scripts.js"></script>
 </body>
