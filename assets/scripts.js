@@ -82,3 +82,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+let capa1 = document.getElementById('fondoSO');
+let capa2 = document.getElementById('circulos');
+let capa3 = document.getElementById('nubes');
+let parallaxTitle = document.getElementById('parallaxTitle');
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    // Limita el movimiento del título a un valor máximo, por ejemplo 200px
+    if (value * 1.5 <= 500) {
+        parallaxTitle.style.marginTop = value * 1.5 + 'px';
+    }
+
+    capa1.style.bottom = value * -1.5 + 'px';
+    capa2.style.left = value * 1.5 + 'px';
+    capa3.style.left = value * 1.5 + 'px';
+});
