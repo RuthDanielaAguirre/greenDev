@@ -138,11 +138,11 @@ nav ul li a:hover {
     background: linear-gradient(90deg, rgba(9,36,0,1) 0%, rgba(26,121,9,1) 35%, rgba(51,199,0,1) 100%);
     color: rgb(244, 251, 244);
     text-align: center;
-    padding: 1.25rem 0;
+    padding: 0rem 1rem;
 }
 
 footer p {
-    size: .5em;
+    font-size: .9em;
     margin: 5px 0;
 }
 
@@ -154,7 +154,7 @@ footer a {
 
 .parallax {
     background-color: white;
-    margin: 5% 0%;
+    margin: 6% 0%;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -443,6 +443,10 @@ form button:hover {
     #menu-toggle:checked + .hamburger + nav ul {
         display: flex;
     }
+    h2 {
+        font-size: 1rem;
+        margin-bottom: .625rem;
+    }
 
     .logo img {
         width: 3.5rem;
@@ -485,7 +489,7 @@ form button:hover {
     }
 
     .footer-container { 
-        padding: 0;
+     
         display: flex;
        flex-direction: column;
        align-items: center;
@@ -511,7 +515,7 @@ form button:hover {
     }
 
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 
     .hero-contacto img{
@@ -527,6 +531,7 @@ form button:hover {
     }
 
     .parallax{
+        margin-top:11%;
         height: 70vh;
     }
 
@@ -549,7 +554,10 @@ form button:hover {
             
         }
 
-      
+        .hero h1 {
+       
+            font-size: 1.5rem;
+        }
 
         .logo img {
             width: 3rem;
