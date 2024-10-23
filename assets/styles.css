@@ -27,6 +27,7 @@ body {
     font-family: var(--body-font);
     background-color: var(--background-color);
     color: var(--text-color);
+  
 }
 
 h1 {
@@ -128,7 +129,6 @@ nav ul li a:hover {
 
 .footer-container {
     display: flex;
-    
     margin: 0;
     bottom: 0;
     width: 100%;
@@ -183,6 +183,8 @@ footer a:hover {
     top: 0%;
     left: 0;
     width: 100%;
+    height: auto;
+    max-width: 100%;
     pointer-events: none;
  }
 
@@ -317,8 +319,8 @@ p {
 
 blockquote {
     background-color: var(--secondary-color);
-    padding: 20px;
-    margin: 20px 0;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
     border-left: 5px solid var(--blockquote-border);
     font-style: italic;
 }
@@ -353,8 +355,7 @@ section h2 {
     margin: 4rem;
     justify-content: space-between;
  align-items: center;
-
-    
+  
     
 }
 
@@ -437,13 +438,22 @@ form button:hover {
 }
 
 
-
-
-
 /* Media Queries */
 @media (max-width: 768px) {
     #menu-toggle:checked + .hamburger + nav ul {
         display: flex;
+    }
+
+    .logo img {
+        width: 3.5rem;
+    }
+    
+    .logo h1 {
+        color: #349b48;
+        text-shadow: 1.5px 1.5px 1.5px var(--primary-color-hover);
+        font-size: 2em;
+        margin-top:10%;
+        text-decoration: none;
     }
 
     .hamburger {
@@ -499,5 +509,54 @@ form button:hover {
     form button {
         width: 100%; 
     }
+
+    .parallax{
+        height: 70vh;
+    }
+
+    #parallaxTitle {
+        font-size: 3rem; 
+      
+    }
+    blockquote p {
+        margin: 0;
+        padding: 16px;
+        font-size: 0.5em;
+    }
+
+    
+    @media (max-width: 480px) {
+        .logo img {
+            width: 3rem;
+            align-content: center;
+        }
+        
+        .logo h1 {
+            font-size: 1.5em;
+            margin-top:1rem;
+            text-decoration: none;
+            align-content: center;
+        }
+
+        .footer-container {
+            display: flex;
+           flex-direction: column;
+
+        }
+        
+        footer p {
+            font-size: .8em;
+            margin: 5px 0;
+        }
+        
+        footer a {
+            color: var(--secondary-color);
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    }
+
 }
 
