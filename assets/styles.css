@@ -116,6 +116,7 @@ nav ul li a:hover {
 .hamburger {
     display: none;
     flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -129,6 +130,7 @@ nav ul li a:hover {
 
 .footer-container {
     display: flex;
+    justify-content: space-between;
     margin: 0;
     bottom: 0;
     width: 100%;
@@ -148,9 +150,7 @@ footer a {
     color: var(--secondary-color);
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
+
 
 .parallax {
     background-color: white;
@@ -484,6 +484,22 @@ form button:hover {
         width: 100%;
     }
 
+    .footer-container { 
+        padding: 0;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+    }
+
+    .footer-container p{
+        font-size: .8em;
+    }
+
+    .footer-texto{
+        border-top: #f5f5f5 1px solid;
+    }
+
     
     .hero {
         height: 60vh;
@@ -526,6 +542,15 @@ form button:hover {
 
     
     @media (max-width: 480px) {
+        header{
+            display: flex;
+            max-width: 100%;
+            justify-content:space-between;
+            
+        }
+
+      
+
         .logo img {
             width: 3rem;
             align-content: center;
@@ -533,30 +558,29 @@ form button:hover {
         
         .logo h1 {
             font-size: 1.5em;
-            margin-top:1rem;
+           
             text-decoration: none;
             align-content: center;
         }
 
         .footer-container {
+            
             display: flex;
            flex-direction: column;
+           align-items: center;
+           justify-content: space-around;
+           
 
         }
         
         footer p {
-            font-size: .8em;
-            margin: 5px 0;
+            font-size: .5em;
+           
         }
+
         
-        footer a {
-            color: var(--secondary-color);
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
         }
     }
 
-}
+
 
