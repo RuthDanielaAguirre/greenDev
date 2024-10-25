@@ -1,0 +1,87 @@
+[
+    {
+        "titulo": "Fin de la pobreza",
+        "descripcion": "Erradicar la pobreza en todas sus formas en todo el mundo.",
+        "imagen": "ruta/a/tu/icono1.png"
+    },
+    {
+        "titulo": "Hambre cero",
+        "descripcion": "Poner fin al hambre, lograr la seguridad alimentaria y la mejora de la nutrición.",
+        "imagen": "ruta/a/tu/icono2.png"
+    },
+    {
+        "titulo": "Salud y bienestar",
+        "descripcion": "Garantizar una vida sana y promover el bienestar para todos en todas las edades.",
+        "imagen": "ruta/a/tu/icono3.png"
+    },
+    {
+        "titulo": "Educación de calidad",
+        "descripcion": "Asegurar una educación inclusiva, equitativa y de calidad.",
+        "imagen": "ruta/a/tu/icono4.png"
+    },
+    {
+        "titulo": "Igualdad de género",
+        "descripcion": "Lograr la igualdad de género y empoderar a todas las mujeres y niñas.",
+        "imagen": "ruta/a/tu/icono5.png"
+    },
+    {
+        "titulo": "Agua limpia y saneamiento",
+        "descripcion": "Garantizar la disponibilidad y la gestión sostenible del agua y el saneamiento para todos.",
+        "imagen": "ruta/a/tu/icono6.png"
+    },
+    {
+        "titulo": "Energía asequible y no contaminante",
+        "descripcion": "Asegurar el acceso a una energía asequible, fiable, sostenible y moderna para todos.",
+        "imagen": "ruta/a/tu/icono7.png"
+    },
+    {
+        "titulo": "Trabajo decente y crecimiento económico",
+        "descripcion": "Promover el crecimiento económico sostenido, inclusivo y sostenible.",
+        "imagen": "ruta/a/tu/icono8.png"
+    },
+    {
+        "titulo": "Industria, innovación e infraestructura",
+        "descripcion": "Fomentar la industrialización inclusiva y sostenible, y promover la innovación.",
+        "imagen": "ruta/a/tu/icono9.png"
+    },
+    {
+        "titulo": "Reducción de las desigualdades",
+        "descripcion": "Reducir la desigualdad en y entre los países.",
+        "imagen": "ruta/a/tu/icono10.png"
+    },
+    {
+        "titulo": "Ciudades y comunidades sostenibles",
+        "descripcion": "Hacer que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles.",
+        "imagen": "ruta/a/tu/icono11.png"
+    },
+    {
+        "titulo": "Consumo y producción responsables",
+        "descripcion": "Garantizar modalidades de consumo y producción sostenibles.",
+        "imagen": "ruta/a/tu/icono12.png"
+    },
+    {
+        "titulo": "Acción por el clima",
+        "descripcion": "Urgente adoptar medidas para combatir el cambio climático y sus efectos.",
+        "imagen": "ruta/a/tu/icono13.png"
+    },
+    {
+        "titulo": "Vida submarina",
+        "descripcion": "Conservar y utilizar de manera sostenible los océanos, los mares y los recursos marinos.",
+        "imagen": "ruta/a/tu/icono14.png"
+    },
+    {
+        "titulo": "Vida de ecosistemas terrestres",
+        "descripcion": "Gestionar sosteniblemente los bosques, combatir la desertificación, detener la pérdida de biodiversidad.",
+        "imagen": "ruta/a/tu/icono15.png"
+    },
+    {
+        "titulo": "Paz, justicia e instituciones sólidas",
+        "descripcion": "Promover sociedades justas, pacíficas e inclusivas.",
+        "imagen": "ruta/a/tu/icono16.png"
+    },
+    {
+        "titulo": "Alianzas para lograr los objetivos",
+        "descripcion": "Fortalecer los medios de implementación y revitalizar la Alianza Mundial para el Desarrollo Sostenible.",
+        "imagen": "ruta/a/tu/icono17.png"
+    }
+]

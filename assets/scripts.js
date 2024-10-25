@@ -1,6 +1,6 @@
 // Cargar el contenido 
 document.addEventListener("DOMContentLoaded", function () {
-    // Cargar la Navbar
+    // Navbar
     const navbarContainer = document.getElementById('navbar-container');
     if (navbarContainer) {
         navbarContainer.innerHTML = `
@@ -53,36 +53,21 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
     }
 
-    // Carrusel
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    const carouselContainer = document.querySelector('.carousel-container');
-
-    if (prevBtn && nextBtn && carouselContainer) {
-        let currentIndex = 0;
-
-        const updateCarousel = () => {
-            const odsItems = document.querySelectorAll('.ods-item');
-            odsItems.forEach((item, index) => {
-                item.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
+        fetch('assets\ods.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('ods-container');
+            data.forEach(ods => {
+                const odsElement = document.createElement('div');
+                odsElement.innerHTML = `
+                    <h2>${ods.titulo}</h2>
+                    <p>${ods.descripcion}</p>
+                    <img src="${ods.imagen}" alt="${ods.titulo}" />
+                `;
+                container.appendChild(odsElement);
             });
-        };
-
-        nextBtn.addEventListener('click', () => {
-            const totalItems = document.querySelectorAll('.ods-item').length;
-            currentIndex = (currentIndex + 1) % totalItems;
-            updateCarousel();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            const totalItems = document.querySelectorAll('.ods-item').length;
-            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-            updateCarousel();
-        });
-
-        // Inicializar el carrusel
-        updateCarousel();
-    }
+        })
+        .catch(error => console.error('Error al cargar el JSON:', error));
 });
 
 let capa1 = document.getElementById('fondoSO');
